@@ -1,0 +1,227 @@
+$primary-white: #CBCBCB
+$secondary-white: #A4A4A4
+$faded-grey: #DFDFDF
+$accent-primary: #C4B784
+$accent-secondary: #919280
+$line-color: #616161
+
+body
+    font-family: 'Frank Ruhl Libre', serif;
+    color: $primary-white
+    background-color: black
+    //max-width: 2560px
+
+a 
+    color: #BFC0C0 
+    letter-spacing: 1px 
+    text-decoration: none
+
+
+.section-title-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 150px
+    margin: 45px 0 70px 100px
+    padding: 0 0 0 28px
+    z-index: 30
+    border-left: 3px solid #616161
+
+    .section-title
+        position: relative
+        font-size: 72px
+        color: #C4B784
+        bottom: 10px
+        &:after
+            content: ""
+            position: absolute
+            left: 0px
+            bottom: -15px
+            height: 15px
+            width: 180px
+            border-bottom: 2px solid #616161
+
+@media screen and ( max-width: 1365px )
+    .section-title-container
+        height: 115px
+        margin: 45px 0 60px 50px
+        .section-title
+            font-size: 64px
+            &:after
+                width: 150px
+
+@media screen and ( max-width: 1080px )
+    .section-title-container
+        height: 100px
+        margin: 45px 0 50px 50px
+        .section-title
+            font-size: 55px
+            &:after
+                width: 130px
+
+@media screen and ( max-width: 880px )
+    .section-title-container
+        height: 80px
+        margin: 45px 0 40px 15px
+        padding: 0 0 0 15px
+        border-left: 2px solid #616161
+        .section-title
+            font-size: 48px
+            &:after
+                width: 115px
+
+@media screen and ( max-width: 680px )
+    .section-title-container
+        height: 70px
+        .section-title
+            font-size: 35px
+            &:after
+                width: 85px
+
+
+.section-image-container
+    z-index: 0
+    display: flex
+    justify-content: flex-end
+    width: 100%
+    .section-image
+        position: static
+        width: 70vw
+        height: Calc(70vw * 0.6)
+        max-width: 1920px
+        background-repeat: no-repeat
+        background-size: cover
+        transition: all 0.5s ease-out
+
+@media screen and ( max-width: 880px )
+    .section-image-container
+        .section-image
+            width: 100vw
+            height: Calc(100vw * 0.6)
+
+@media screen and ( max-width: 680px )
+    .section-image-container
+        .section-image
+            height: Calc(100vw * 0.8)
+
+
+.dropdown
+    .arrow
+        transform: rotate(0)
+        -webkit-transform: rotate(0)
+        -moz-transform: rotate(0)
+        -ms-transform: rotate(0)
+        -o-transform: rotate(0)
+        &:before, &:after
+            background-color: transparent
+            width: 3px
+            height: 10px
+            display: inline-block
+            position: absolute
+            border-bottom: 12px solid #616161
+            top: 0
+            left: 0
+            transform: rotate(0)
+            -webkit-transform: rotate(0)
+            -moz-transform: rotate(0)
+            -ms-transform: rotate(0)
+            -o-transform: rotate(0)
+        &:before
+            transform: rotate(-135deg)
+            -webkit-transform: rotate(-135deg)
+            -moz-transform: rotate(-135deg)
+            -ms-transform: rotate(-135deg)
+            -o-transform: rotate(-135deg)
+        &:after 
+            transform: rotate(135deg)
+            -webkit-transform: rotate(135deg)
+            -moz-transform: rotate(135deg)
+            -ms-transform: rotate(135deg)
+            -o-transform: rotate(135deg)
+
+    &.active
+        .arrow
+            transform: rotate(0)
+            -webkit-transform: rotate(0)
+            -moz-transform: rotate(0)
+            -ms-transform: rotate(0)
+            -o-transform: rotate(0)
+            transform: translate(0, -6px)
+            -webkit-transform: translate(0, -6px)
+            -moz-transform: translate(0, -6px)
+            -ms-transform: translate(0, -6px)
+            -o-transform: translate(0, -6px)
+            &:before, &:after
+                border-bottom: 12px solid #CBCBCB
+            &:before
+                transform: rotate(-45deg)
+                -webkit-transform: rotate(-45deg)
+                -moz-transform: rotate(-45deg)
+                -ms-transform: rotate(-45deg)
+                -o-transform: rotate(-45deg)
+            &:after
+                transform: rotate(45deg)
+                -webkit-transform: rotate(45deg)
+                -moz-transform: rotate(45deg)
+                -ms-transform: rotate(45deg)
+                -o-transform: rotate(45deg)
+
+.arrow
+    width: 13px
+    height: 13px
+    display: none
+    position: relative
+    bottom: -25px
+    left: -20px
+    transition: 0.4s ease
+    margin-top: 2px
+    text-align: left
+    transform: rotate(45deg)
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    &:before, &:after
+        position: absolute
+        content: ''
+        display: inline-block
+        width: 12px
+        height: 3px
+        background-color: #fff
+        transition: 0.5s ease
+    &:after
+        position: absolute
+        transform: rotate(90deg)
+        -webkit-transform: rotate(90deg)
+        -moz-transform: rotate(90deg)
+        -ms-transform: rotate(90deg)
+        -o-transform: rotate(90deg)
+        top: -5px
+        left: 5px
+
+@media screen and ( max-width: 1280px )
+    .dropdown
+        cursor: pointer 
+        .arrow
+            display: inline-block
+
+
+.link-icon
+    display: inline-block
+    position: relative
+    width: 20px
+    height: 20px
+    margin-left: 15px
+    background-image: url("../img/link.svg")
+    background-repeat: no-repeat
+    background-size: cover
+    text-decoration: none
+    cursor: pointer
+    transition: all 0.5s ease-out
+
+@media screen and ( max-width: 1080px )
+    .link-icon
+        width: 16px
+        height: 16px
+        margin-left: 10px
+

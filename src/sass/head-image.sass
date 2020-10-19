@@ -1,0 +1,28 @@
+
+.absolute-image-header
+    position: absolute
+    right: 0px
+    top: 0px
+    z-index: 0
+    width: 66vw
+    height: Calc( 66vw * 1.4 )
+    background-image: url("../img/title.png")
+    background-repeat: no-repeat
+    background-size: cover
+    transition: all 0.5s ease-out
+@media screen and (min-width: 2800px)
+    .absolute-image-header
+        max-width: 40vw
+        height: Calc(40vw * 1.4)
+@media screen and (min-width: 2200px) and (max-width: 2799px)
+    .absolute-image-header
+        max-width: 50vw
+        height: Calc(50vw * 1.4)
+@media screen and (max-width: 1365px)
+    .absolute-image-header
+        width: 80vw
+        height: Calc(80vw * 1.4)
+@media screen and (max-width: 880px)
+    .absolute-image-header
+        width: 100vw
+        height: Calc(100vw * 1.4)

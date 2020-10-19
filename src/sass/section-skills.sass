@@ -1,0 +1,97 @@
+#section-skills
+    z-index: 40
+    overflow: hidden
+
+    .skills-container-full
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        max-width: 2560px
+        margin: 0 130px 0 100px
+
+        .skills-body
+            //max-width: 1920px
+            padding: 0 0 0 28px
+            margin-bottom: 100px
+            font-size: 18px
+            line-height: 35px
+
+        .skills-list-container
+            display: flex
+            justify-content: space-between
+            left: 0
+            padding: 0 0 0 28px
+            margin-bottom: 50px
+            max-width: 1920px
+
+            .single-skills-list
+                z-index: 40
+                margin: 0 30px 0 0 
+                .skills-title
+                    font-size: 34px
+                    line-height: 72px
+                    color: #919280
+                .skills-list
+                    padding-left: 15px
+                    list-style: inside
+                    li
+                        font-size: 18px
+                        line-height: 35px
+
+@media screen and ( max-width: 1600px )
+    #section-skills
+        .skills-container-full
+            .skills-list-container
+                .single-skills-list
+                    .skills-title
+                        font-size: 24px
+                        line-height: 40px
+                    .skills-list
+                        li 
+                            font-size: 16px
+                            line-height: 28px
+
+@media screen and ( max-width: 1365px )
+    #section-skills
+        .skills-container-full
+            margin: 0 130px 0 50px
+            .skills-body
+            .skills-list-container
+                .single-skills-list
+                    .skills-title
+
+@media screen and ( max-width: 1280px )
+    #section-skills
+        .skills-container-full
+            .skills-body
+                margin-bottom: 80px
+            .skills-list-container
+                flex-direction: column
+                justify-content: flex-start
+                .single-skills-list
+                    border-bottom: 2px solid #616161
+                    .skills-title
+                        font-size: 24px
+                        line-height: 72px
+                        span
+                            float: right
+                    .skills-list
+                        margin-bottom: 15px
+
+@media screen and ( max-width: 880px )
+    #section-skills
+        .skills-container-full
+            margin: 0 50px 0 15px
+            .skills-body
+                font-size: 16px
+                line-height: 22px
+                padding: 0 0 0 15px
+            .skills-list-container
+                padding: 0 0 0 15px
+                .single-skills-list
+                    margin: 0 15px 0 0 
+
+
+                    
+
+

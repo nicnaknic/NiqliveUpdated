@@ -1,0 +1,103 @@
+#section-photo-gallery
+    z-index: 40
+    overflow: hidden
+    .photo-gallery-container-full
+        display: grid
+        position: relative
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 120px
+        grid-row-gap: 120px
+        z-index: 40
+        margin: 0 auto 230px auto
+        padding: 0 100px 0 128px
+        max-width: 1600px
+        
+        .grid-item
+            display: inline-flex 
+            position: relative 
+            align-items: center 
+            justify-content: center 
+            z-index: 40
+            max-width: 434px
+            width: auto
+            //height: 611px
+            border: 3px solid #ffffff
+            background-repeat: no-repeat
+            background-position-x: center
+            background-size: cover
+            overflow: hidden 
+            cursor: pointer 
+            .description
+                display: none
+            #circle 
+                width: 0% 
+                height: 0% 
+                opacity: 0 
+                line-height: 40px 
+                border-radius: 50% 
+                background: #242424
+                position: absolute 
+                transition: all .3s ease-Out 
+                top: 50%
+                left: 50% 
+            #expand
+                z-index: 200
+                opacity: 0
+                transition: all .3s ease-Out 
+                width: 50px
+                height: 50px
+                background: url(../img/expand.svg)
+            &:hover
+                #circle
+                    width: 400% 
+                    height: 200% 
+                    opacity: 0.6
+                    top: -50% 
+                    left: -100%
+                #expand
+                    opacity: 1
+
+
+@media screen and ( max-width: 1600px )
+    #section-photo-gallery
+        .photo-gallery-container-full
+            grid-column-gap: 80px
+            grid-row-gap: 80px
+            .grid-item
+                #expand
+                    width: 40px
+                    height: 40px
+
+@media screen and ( max-width: 1365px )
+    #section-photo-gallery
+        .photo-gallery-container-full
+            padding: 0 130px 0 78px
+            grid-column-gap: 50px
+            grid-row-gap: 50px
+
+@media screen and ( max-width: 1080px )
+    #section-photo-gallery
+        .photo-gallery-container-full
+            grid-column-gap: 50px
+            grid-row-gap: 50px
+            grid-template-columns: repeat(2, 1fr)
+            margin: 0 auto 180px auto
+            .last-item
+                max-width: unset
+                grid-column: 1 / span 2
+            .grid-item
+                #expand
+                    width: 35px
+                    height: 35px
+
+@media screen and ( max-width: 880px )
+    #section-photo-gallery
+        .photo-gallery-container-full
+            margin: 0 50px 130px 15px
+            padding: 0 0 0 15px
+            grid-column-gap: 15px
+            grid-row-gap: 15px
+            .grid-item
+                #expand
+                    width: 25px
+                    height: 25px

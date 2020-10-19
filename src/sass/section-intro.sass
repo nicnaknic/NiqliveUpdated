@@ -1,0 +1,133 @@
+#section-intro
+    z-index: 20
+    overflow: hidden
+    
+    .intro-container-full-extended
+        width: 100vw
+        height: Calc(66vw * 1.4)
+
+        .intro-container-full
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100vw
+            height: 100vh
+            padding: 0 100px
+
+            .content-container
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                transition: all 0.45s ease-out
+
+                .content-title
+                    position: relative
+                    padding: 0 0 0 45px
+                    margin-bottom: 35px
+                    &:before
+                        content: ""
+                        position: absolute
+                        top: 0px
+                        left: 0px
+                        height: 80%
+                        border-left: 3px solid #616161
+                    .intro-title-main
+                        height: auto
+                        font-size: 110px
+                        color: #CBCBCB
+                        margin-bottom: 20px
+                        &:after
+                            content: ""
+                            position: absolute
+                            left: 50px
+                            bottom: 50px
+                            height: 15px
+                            width: 320px
+                            border-bottom: 2px solid #616161
+
+                    .intro-title-secondary
+                        font-size: 34px
+                        color: #C4B784
+            
+                .content-body
+                    position: relative
+                    margin: 0 0 55px 45px
+                    max-width: 550px
+                    .intro-body
+                        font-size: 24px
+                        line-height: 40px
+                        color: #A4A4A4
+                        margin: 0
+@media screen and (min-width: 2800px)
+    #section-intro
+        .intro-container-full-extended
+            height: Calc(40vw * 1.4)
+
+@media screen and (min-width: 2200px) and (max-width: 2799px)
+    #section-intro
+        .intro-container-full-extended
+            height: Calc(50vw * 1.4)
+
+@media screen and ( max-width: 1365px )
+    #section-intro
+        .intro-container-full-extended
+            height: Calc(80vw * 1.4)
+            .intro-container-full
+                padding: 0 50px
+                .content-container
+                    .content-title
+                        padding: 0 0 0 30px
+                        &:before
+                            height: 75%
+                        .intro-title-main
+                            font-size: 86px
+                            &:after
+                                left: 32px
+                                bottom: 45px
+                                width: 250px
+                        .intro-title-secondary
+                            font-size: 30px
+                    .content-body
+                        max-width: 450px
+                        margin: 0 0 30px 30px
+                        .intro-body
+                            font-size: 21px
+                            line-height: 33px
+
+@media screen and (max-width: 1080px)
+    #section-intro
+            .intro-container-full-extended
+                height: 100vh
+
+@media screen and (max-width: 880px)
+    #section-intro
+            .intro-container-full-extended
+                .intro-container-full
+                    padding: 0 15px
+                    .content-container
+                        .content-title
+                            padding: 0 0 0 15px
+                            margin-bottom: 15px
+                            &:before
+                                height: 100%
+                                border-left: 1px solid #616161
+                            .intro-title-main
+                                font-size: 48px
+                                &:after
+                                    left: 13px
+                                    bottom: 35px
+                                    width: 140px
+                                    border-bottom: 1px solid #616161
+                            .intro-title-secondary
+                                font-size: 28px
+                        .content-body
+                            max-width: 310px
+                            margin: 0 0 15px 15px
+                            .intro-body
+                                font-size: 16px
+                                line-height: 22px
+
+
+
+/* Page Intro and Header Content */
+/* END */          

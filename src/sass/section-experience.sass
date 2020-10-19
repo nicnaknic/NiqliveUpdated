@@ -1,0 +1,126 @@
+#section-experience
+    z-index: 40
+    overflow: hidden
+
+    .experience-container-full
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        max-width: 2560px
+        margin: 0 130px 0 100px
+
+        .single-experience-container
+            display: flex
+            justify-content: flex-start
+            margin-bottom: 80px
+            padding: 0 0 0 28px
+            .container-left
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                min-width: 400px
+                margin: 0 30px 0 0 
+                .experience-location
+                    max-width: 400px
+                    font-size: 28px
+                    line-height: 40px
+                    color: #919280
+                .experience-date
+                    max-width: 400px
+                    font-size: 22px 
+                    line-height: 35px
+            .container-right
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                max-width: 1920px
+                .experience-title
+                    font-size: 28px
+                    line-height: 40px
+                    color: #919280
+                    cursor: pointer
+                    text-decoration: none
+                    transition: all 0.2s ease-out
+                    &:hover
+                        color: #bcbda4
+                        transform: translateX(-10px)
+                        -webkit-transform: translateX(-10px)
+                        -moz-transform: translateX(-10px)
+                        -ms-transform: translateX(-10px)
+                        -o-transform: translateX(-10px)
+
+                .experience-body
+                    font-size: 18px
+                    line-height: 35px
+
+@media screen and ( max-width: 1365px )
+    #section-experience
+        .experience-container-full
+            margin: 0 130px 0 50px
+            .single-experience-container
+                margin-bottom: 50px
+                .container-left
+                    min-width: 300px
+                    .experience-location
+                        font-size: 24px
+                        line-height: 40px
+                    .experience-date
+                        font-size: 20px
+                        line-height: 35px
+                .container-right
+                    .experience-title
+                        font-size: 24px
+                        line-height: 40px
+                    .experience-body
+                        line-height: 32px
+
+@media screen and ( max-width: 1080px )
+    #section-experience
+        .experience-container-full
+            margin: 0 80px 0 50px
+            .single-experience-container
+                .container-left
+                    min-width: 220px
+                    .experience-location
+                        font-size: 22px
+                        line-height: 35px
+                    .experience-date
+                        font-size: 18px
+                        line-height: 22px
+                .container-right
+                    .experience-title
+                        font-size: 22px
+                        line-height: 35px
+                    .experience-body
+                        font-size: 16px
+                        line-height: 22px
+
+
+@media screen and ( max-width: 880px )
+    #section-experience
+        .experience-container-full
+            margin: 0 50px 0 15px
+            .single-experience-container
+                flex-direction: column
+                margin-bottom: 60px
+                padding: 0 0 0 15px
+                .container-left
+                    widows: auto
+                    .experience-location
+                    .experience-date
+                        font-size: 14px
+                        line-height: 22px
+                        margin-bottom: 26px
+                        opacity: .58
+                        &:after
+                            content: ""
+                            position: absolute
+                            left: 30px
+                            height: 35px
+                            width: 90px
+                            border-bottom: 2px solid #616161
+                            
+                .container-right
+                    .experience-title
+                    .experience-body
+

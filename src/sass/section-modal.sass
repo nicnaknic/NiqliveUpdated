@@ -1,0 +1,89 @@
+#section-modal
+    .modal-container-full
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: fixed
+        z-index: 3000
+        top: 0
+        left: 0
+        width: 100vw
+        min-height: 100vh
+        background-color: rgba(32, 32, 32, .8)
+        cursor: pointer
+        .close
+            position: fixed
+            z-index: 4000
+            top: 30px
+            right: 30px
+            width: 30px
+            height: 30px
+            background: url(../img/close.svg)
+
+        .modal-image-container
+            width: 70vw
+            max-width: 70vw
+            height: 85vh
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            filter: drop-shadow(0 0 0.75rem #1c1c1c)
+        .modal-text-container
+            margin: 30px 15px
+            .description
+                font-size: 16px
+                line-height: 25px
+                text-align: center
+                font-family: 'Roboto', sans-serif
+                span
+                    font-weight: 600
+    .active
+        animation-name: fadeIn
+        animation-duration: .5s
+        animation-fill-mode: normal
+    .hidden
+        animation-name: fadeOut
+        animation-duration: .5s
+        animation-fill-mode: normal
+
+@media screen and ( max-width: 1365px )
+    #section-modal
+        .modal-container-full
+            .modal-image-container
+                width: 85vw
+                max-width: 85vw
+
+@media screen and ( max-width: 1080px )
+    #section-modal
+        .modal-container-full
+            .modal-image-container
+                width: 90vw
+                max-width: 90vw
+
+@media screen and ( max-width: 880px )
+    #section-modal
+        .modal-container-full
+            .close
+                top: 15px
+                right: 15px
+            .modal-image-container
+                width: 95vw
+                max-width: 95vw
+            .modal-text-container
+                margin: 15px
+                .description
+                    font-size: 14px
+
+
+
+@keyframes fadeIn
+    from 
+        opacity: 0
+    to
+        opacity: 1
+
+@keyframes fadeOut
+    from 
+        opacity: 1
+    to
+        opacity: 0

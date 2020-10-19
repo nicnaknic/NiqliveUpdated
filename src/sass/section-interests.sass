@@ -1,0 +1,54 @@
+#section-interests
+    z-index: 40
+    overflow: hidden
+    .interests-container-full
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        max-width: 2560px
+        margin: 0 130px 0 100px
+        .single-interest-container
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            margin-bottom: 80px
+            padding: 0 0 0 28px
+            .interest-title
+                font-size: 28px
+                line-height: 40px
+                color: #919280
+            .interest-body
+                font-size: 18px
+                line-height: 35px
+
+@media screen and ( max-width: 1365px )
+    #section-interests
+        .interests-container-full
+            margin: 0 130px 0 50px
+            .single-interest-container
+                margin-bottom: 50px
+                .interest-title
+                    font-size: 24px
+                    line-height: 40px
+                .interest-body
+                    line-height: 32px
+
+
+@media screen and ( max-width: 1080px )
+    #section-interests
+        .interests-container-full
+            0 80px 0 50px
+            .single-interest-container
+                .interest-title
+                    font-size: 22px
+                    line-height: 35px
+
+@media screen and ( max-width: 880px )
+    #section-interests
+        .interests-container-full
+            margin: 0 50px 0 15px
+            .single-interest-container
+                padding: 0 0 0 15px
+                .interest-body
+                    font-size: 16px
+                    line-height: 22px
